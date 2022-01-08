@@ -1,0 +1,107 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      
+      {
+        "type": "java",
+        "name": "Launch testFile",
+        "request": "launch",
+        "mainClass": "testFile",
+        "projectName": "Visual Studio Projects_be21807d"
+      },
+      {
+        "type": "java",
+        "name": "Launch QuickStart",
+        "request": "launch",
+        "mainClass": "QuickStart",
+        "projectName": "Visual Studio Projects_be21807d"
+      },
+      {
+        "name": "(gdb) Bash on Windows Launch",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "enter program name, for example ${workspaceFolder}/a.exe",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${fileDirname}",
+        "environment": [],
+        "externalConsole": false,
+        "pipeTransport": {
+          "debuggerPath": "/usr/bin/gdb",
+          "pipeProgram": "${env:windir}\\system32\\bash.exe",
+          "pipeArgs": [
+            "-c"
+          ],
+          "pipeCwd": ""
+        },
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      },
+      {
+        "name": "(gdb) Bash on Windows Launch",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "enter program name, for example ${workspaceFolder}/a.exe",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${fileDirname}",
+        "environment": [],
+        "externalConsole": false,
+        "pipeTransport": {
+          "debuggerPath": "/usr/bin/gdb",
+          "pipeProgram": "${env:windir}\\system32\\bash.exe",
+          "pipeArgs": [
+            "-c"
+          ],
+          "pipeCwd": ""
+        },
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      },
+      {
+        "name": "(gdb) Launch",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "/home/THINKPAD/projects/helloworld/helloworld.out",
+        "args": [
+          ""
+        ],
+        "stopAtEntry": true,
+        "cwd": "/home/THINKPAD/projects/helloworld/",
+        "environment": [],
+        "externalConsole": true,
+        "windows": {
+          "MIMode": "gdb",
+          "miDebuggerPath": "/usr/bin/gdb",
+          "setupCommands": [
+            {
+              "description": "Enable pretty-printing for gdb",
+              "text": "-enable-pretty-printing",
+              "ignoreFailures": true
+            }
+          ]
+        },
+        "pipeTransport": {
+          "pipeCwd": "",
+          "pipeProgram": "bash.exe",
+          "pipeArgs": [
+            "-c"
+          ],
+          "debuggerPath": "/usr/bin/gdb"
+        },
+        "sourceFileMap": {
+          "/mnt/c": "c:\\"
+        }
+      }
+    ]
+  }
